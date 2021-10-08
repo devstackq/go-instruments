@@ -1,0 +1,10 @@
+syntax = "proto3"
+package grpcapp
+
+service Greeter {
+    rpc Say(Request) returns (Reply){}
+}
+
+message Request{string name= 1}
+
+message Reply{string messageText=1}
