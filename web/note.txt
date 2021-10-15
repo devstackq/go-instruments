@@ -1,0 +1,42 @@
+Anaotomy services
+//router - запрос - вызов функции
+gorilla/mux, http.router
+//auth - signup, signin
+//logging - message
+//error handler
+//валиджация входных праметров
+//валидация входных параметров
+//шаблонизация
+// кофнигурирование
+//мониторинг
+//middleware, framework
+//работа с БД
+//grpc, microservices
+// rabbitmq
+
+context.Value()
+
+middleware - для обертки других функций, возвращает функцию.(ФВП)
+что бы кадому хенлеру/функции не писать одну и ту же функцию - Декоратор паттерн
+
+Ошибки обрабатывать, в понятном виде, где и что произошло и какие парметры были
+return fmt.Errorf() - вернет ошибку с нашим текстом
+errors.New() // именновыные ошибки
+error - interface
+custom ошибка -> sturct , method
+
+
+Routers
+ЧПУ - человекопонятный урл
+Обычный http router огрничен, метод - парсить нельзя парматеры напрямую 
+gorilla/mux - гибки, многофункциональный - но медленный
+httprouter - быстрйый, но малофункциональный
+
+Можно использовать несколько роутеоров за раз
+gorilla/mux, fasthttp, etc
+
+govalidator - библиотека для валидирования значений(структура)
+
+gorilla/schema - парсит парметры из urlk - в стурктуру
+
+framworks - beego - auth, 
